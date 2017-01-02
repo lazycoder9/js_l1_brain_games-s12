@@ -1,12 +1,14 @@
 {
   "name": "brain-games",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "",
   "bin": {
     "brain-even": "./bin/brain-even.js"
   },
   "scripts": {
-    "babel-node": "babel-node"
+    "babel-node": "babel-node",
+    "flow": "flow",
+    "flow-typed": "flow-typed"
   },
   "repository": {
     "type": "git",
@@ -26,9 +28,12 @@
     "babel-cli": "*",
     "babel-core": "*",
     "babel-preset-env": "*",
-    "babel-preset-stage-0": "*"
+    "babel-preset-stage-0": "*",
+    "babel-plugin-syntax-flow": "*",
+    "babel-plugin-transform-flow-strip-types": "*",
+    "flow-bin": "^0.37",
+    "flow-typed": "*"
   },
-  "main": "index.js",
   "dependencies": {
     "babel-cli": "^6.18.0",
     "babel-core": "^6.21.0",
