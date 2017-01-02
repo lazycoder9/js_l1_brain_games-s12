@@ -1,0 +1,26 @@
+{
+  "name": "brain-games",
+  "version": "0.0.1",
+  "description": "",
+  "bin": {
+    "brain-even": "dist/bin/brain-even.js"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ula9/js_l1_brain_games-s12.git"
+  },
+  "keywords": [
+    "brain",
+    "games"
+  ],
+  "author": "LazyCoder",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/ula9/js_l1_brain_games-s12/issues"
+  },
+  "homepage": "https://github.com/ula9/js_l1_brain_games-s12",
+  "main": "index.js"
+}
