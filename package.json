@@ -5,7 +5,6 @@
   "bin": {
     "brain-even": "./bin/brain-even.js"
   },
-  "main": "bin/brain-even.js",
   "scripts": {
     "test": "test"
   },
@@ -22,6 +21,5 @@
   "bugs": {
     "url": "https://github.com/ula9/js_l1_brain_games-s12/issues"
   },
-  "homepage": "https://github.com/ula9/js_l1_brain_games-s12",
-  "main": "index.js"
+  "homepage": "https://github.com/ula9/js_l1_brain_games-s12"
 }
