@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "bin": {
-    "brain-even": "dist/bin/brain-even.js"
+    "brain-even": "src/bin/brain-even.js"
   },
   "scripts": {
     "test": "test"
