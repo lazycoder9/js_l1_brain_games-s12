@@ -1,9 +1,9 @@
 {
   "name": "brain-games",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "",
   "bin": {
-    "brain-even": "dist/bin/brain-even.js"
+    "brain-even": "bin/brain-even.js"
   },
   "scripts": {
     "test": "test"
