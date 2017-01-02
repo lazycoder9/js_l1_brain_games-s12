@@ -1,17 +1,16 @@
 {
   "name": "brain-games",
-  "version": "0.0.5",
+  "version": "0.0.8",
   "description": "",
   "bin": {
     "brain-even": "./bin/brain-even.js"
-
   },
   "scripts": {
-    "test": "test"
+    "babel-node": "babel-node"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ula9/js_l1_brain_games-s12.git"
+    "url": "git+https://github.com/ula9/js_l1_brain_games-s12.git"
   },
   "keywords": [
     "brain",
@@ -22,5 +21,18 @@
   "bugs": {
     "url": "https://github.com/ula9/js_l1_brain_games-s12/issues"
   },
-  "homepage": "https://github.com/ula9/js_l1_brain_games-s12"
+  "homepage": "https://github.com/ula9/js_l1_brain_games-s12",
+  "devDependencies": {
+    "babel-cli": "*",
+    "babel-core": "*",
+    "babel-preset-env": "*",
+    "babel-preset-stage-0": "*"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "babel-preset-env": "^1.1.4",
+    "babel-preset-stage-0": "^6.16.0"
+  }
 }
