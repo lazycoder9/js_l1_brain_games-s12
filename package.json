@@ -4,6 +4,7 @@
   "description": "",
   "bin": {
     "brain-even": "./bin/brain-even.js"
+
   },
   "scripts": {
     "test": "test"
