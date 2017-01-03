@@ -1,7 +1,7 @@
 {
   "name": "brain-games",
-  "version": "0.0.10",
-  "description": "",
+  "version": "0.1.0",
+  "description": "[![Code Climate](https://codeclimate.com/github/ula9/js_l1_brain_games-s12/badges/gpa.svg)](https://codeclimate.com/github/ula9/js_l1_brain_games-s12)",
   "bin": {
     "brain-even": "./bin/brain-even.js"
   },
@@ -29,16 +29,20 @@
     "babel-cli": "*",
     "babel-core": "*",
     "babel-eslint": "*",
-    "babel-preset-env": "*",
-    "babel-preset-stage-0": "*",
     "babel-plugin-syntax-flow": "*",
     "babel-plugin-transform-flow-strip-types": "*",
-    "flow-bin": "^0.37",
-    "flow-typed": "*",
+    "babel-plugin-transform-runtime": "*",
+    "babel-preset-env": "*",
+    "babel-preset-stage-0": "*",
+    "debug": "*",
     "eslint": "*",
     "eslint-config-airbnb": "*",
     "eslint-plugin-flowtype": "*",
-    "eslint-plugin-import": "*"
+    "eslint-plugin-import": "*",
+    "flow-bin": "^0.37",
+    "flow-typed": "*",
+    "jest": "*",
+    "readline-sync": "^1.4.5"
   },
   "dependencies": {
     "babel-cli": "^6.18.0",
