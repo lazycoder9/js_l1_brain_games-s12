@@ -1,6 +1,6 @@
 {
   "name": "brain-games",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "[![Code Climate](https://codeclimate.com/github/ula9/js_l1_brain_games-s12/badges/gpa.svg)](https://codeclimate.com/github/ula9/js_l1_brain_games-s12)",
   "bin": {
     "brain-even": "./bin/brain-even.js"
@@ -48,6 +48,8 @@
     "babel-cli": "^6.18.0",
     "babel-core": "^6.21.0",
     "babel-preset-env": "^1.1.4",
-    "babel-preset-stage-0": "^6.16.0"
-  }
+    "babel-preset-stage-0": "^6.16.0",
+    "readline-sync": "*"
+  },
+  "main": "index.js"
 }
