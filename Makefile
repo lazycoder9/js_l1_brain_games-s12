@@ -2,10 +2,10 @@ install:
 	npm install
 
 run:
-	npm run babel-node -- ./bin/$(G)
+	npm run babel-node -- .src/bin/$(G)
 
 publish:
 	npm publish
 
 lint:
-	npm run eslint -- bin
+	npm run eslint -- src/bin
