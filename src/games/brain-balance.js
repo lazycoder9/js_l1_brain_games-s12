@@ -5,7 +5,7 @@ import game from '../';
 const balance = (num) => {
   const arr = String(num).split('').map(e => Number(e));
   if (Math.abs(arr[0] - arr[arr.length - 1]) < 2) {
-    return Number(arr.sort().join(''));
+    return num;
   }
 
   arr[0] += 1;
