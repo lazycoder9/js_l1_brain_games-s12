@@ -19,7 +19,7 @@ export default (description : string,
     const userAnswer = readlineSync.question('Your answer: ');
     if (String(correctAnswer) === String(userAnswer)) {
       console.log('Correct!');
-      correct++;
+      correct += 1;
     } else {
       console.log(`"${userAnswer}" is wrong answer ;(. Correct answer is "${correctAnswer}".
 Let's try again, ${name}`);
