@@ -2,6 +2,8 @@
 
 import game from '../';
 
+type Question = { num1: number; num2: number; sign: string };
+
 const description = `what is the result of the expression?
 (If result is real number, write answer to 2 decimal places.)`;
 
@@ -22,14 +24,13 @@ const getQuestion = () => {
   return { num1, num2, sign };
 };
 
-const questionToString = (question : Object) => {
+const questionToString = (question: Question) => {
   const { num1, num2, sign } = question;
-  return `${num1} ${sign} ${num2}`;
+  return `Question: ${num1} ${sign} ${num2}`;
 };
 
-const getCorrectAnswer = (question : number) => {
+const getCorrectAnswer = (question: Question) => {
   const { num1, num2, sign } = question;
-
   switch (sign) {
     case '+': return num1 + num2;
     case '-': return num1 - num2;

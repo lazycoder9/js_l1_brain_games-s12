@@ -1,10 +1,12 @@
 // @flow
+/* eslint-disable no-console */
+
 import readlineSync from 'readline-sync';
 
-export default (description : string,
-  getQuestion : Function,
-  getCorrectAnswer : Function,
-  toStringQuestion : Function) => {
+export default (description: string,
+  getQuestion: Function,
+  getCorrectAnswer: Function,
+  toStringQuestion: Function) => {
   console.log('Welcome to the Brain Games!\n');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
