@@ -1,10 +1,6 @@
 #!/usr/bin/env node
+/* @flow */
 
-import readlineSync from 'readline-sync';
-import isOdd from '../isOdd';
+import brainEven from '../games/brain-even';
 
-console.log('Welcome to the Brain Games!\n');
-
-const name = readlineSync.question('May I have your name? ');
-
-isOdd(name);
+brainEven();
