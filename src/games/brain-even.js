@@ -10,6 +10,6 @@ const getQuestion = () => Math.round(Math.random() * 100);
 
 const questionToString = question => `Question: ${question}`;
 
-const getCorrectAnswer = question => isOdd(question) ? 'yes' : 'no';
+const getCorrectAnswer = question => (isOdd(question) ? 'yes' : 'no');
 
 export default () => game(description, getQuestion, getCorrectAnswer, questionToString);
