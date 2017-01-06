@@ -2,16 +2,18 @@
 
 import game from '../';
 
-const balance = (num) => {
+const balance = (num: number) => {
   const arr = String(num).split('').map(e => Number(e));
-  if (Math.abs(arr[0] - arr[arr.length - 1]) < 2) {
-    return num;
+  const min = Math.min(...arr);
+  const max = Math.max(...arr);
+  if (Math.abs(min - max) < 2) {
+    return arr.sort().join('');
   }
 
-  arr[0] += 1;
-  arr[arr.length - 1] -= 1;
+  arr[arr.indexOf(min)] += 1;
+  arr[arr.indexOf(max)] -= 1;
 
-  return balance(Number(arr.sort().join('')));
+  return balance(Number(arr.join('')));
 };
 
 const description = 'balance the given number';
