@@ -1,6 +1,6 @@
 // @flow
 
-import game from '../';
+import game from '../game';
 
 const balance = (num: number) => {
   const arr = String(num).split('').map(e => Number(e));

@@ -1,6 +1,6 @@
 // @flow
 
-import game from '../';
+import game from '../game';
 
 type Question = { num1: number; num2: number };
 
