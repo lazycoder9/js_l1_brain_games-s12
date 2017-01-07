@@ -1,6 +1,6 @@
 // @flow
 
-import game from '../';
+import game from '../game';
 
 const description = 'answer "yes" if number odd otherwise answer "no".';
 

@@ -1,7 +1,7 @@
 // @flow
 /* eslint-disable no-plusplus */
 
-import game from '../';
+import game from '../game';
 
 type Question = { progression: Array<number>; emptyPosition: number };
 
