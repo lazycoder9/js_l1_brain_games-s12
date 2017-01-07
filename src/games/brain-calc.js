@@ -4,8 +4,8 @@ import game from '../game';
 
 type Question = { num1: number; num2: number; sign: string };
 
-const description = `what is the result of the expression?
-(If result is real number, write answer to 2 decimal places.)`;
+const description = `What is the result of the expression?
+(If operation is divide, write answer to 2 decimal places.)`;
 
 const getQuestion = () => {
   const randSign = Math.round((Math.random() * 3) + 1);

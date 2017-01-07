@@ -21,7 +21,7 @@ const startGame = (num: number) => {
 
 const askGameNum = () => {
   const options = [0, 1, 2, 3, 4, 5];
-  let gameNum = Number(readlineSync.question('Type the number of the game that you want to play: '));
+  let gameNum = Number(readlineSync.question('\nType the number of the game that you want to play: '));
   while (!options.includes(gameNum)) {
     gameNum = readlineSync.question('Please, type the correct number: ');
   }

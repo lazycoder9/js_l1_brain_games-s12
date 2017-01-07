@@ -16,7 +16,7 @@ const balance = (num: number) => {
   return balance(Number(arr.join('')));
 };
 
-const description = 'balance the given number';
+const description = 'Balance the given number';
 
 const getQuestion = () => Math.round(Math.random() * 100000);
 
