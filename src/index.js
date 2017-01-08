@@ -2,6 +2,7 @@
 /* eslint-disable no-console */
 
 import readlineSync from 'readline-sync';
+import colors from 'chalk';
 import brainEven from './games/brain-even';
 import brainCalc from './games/brain-calc';
 import brainBalance from './games/brain-balance';
@@ -21,7 +22,7 @@ const startGame = (num: number) => {
 
 const askGameNum = () => {
   const options = [0, 1, 2, 3, 4, 5];
-  console.log(`1. Brain Even
+  console.log(`\n1. Brain Even
 2. Brain Calc
 3. Brain Balance
 4. Brain GCD
@@ -44,9 +45,11 @@ const retryGame = () => {
 };
 
 export default () => {
-  console.log('Welcome to the Brain Games!\n');
+  console.log(colors.green('*********************************************************'));
+  console.log(colors.green('************** Welcome to the Brain Games! **************'));
+  console.log(colors.green('*********************************************************\n'));
   const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
+  console.log(colors.green(`Hello, ${name}!`));
 
   let playerWish = true;
 
@@ -54,13 +57,13 @@ export default () => {
     const gameNum = askGameNum();
     const success = startGame(gameNum);
     if (success) {
-      console.log(`Congratulations, ${name}!`);
+      console.log(colors.green(`Congratulations, ${name}!`));
     } else {
-      console.log(`Let's try again, ${name}.`);
+      console.log(colors.yellow(`Let's try again, ${name}.`));
     }
 
     playerWish = retryGame();
   }
 
-  console.log(`\nGoodbye, ${name}`);
+  console.log(colors.yellow(`\nGoodbye, ${name}`));
 };

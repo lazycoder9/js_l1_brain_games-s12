@@ -5,7 +5,7 @@ import game from '../game';
 
 type Question = { progression: Array<number>; emptyPosition: number };
 
-const description = 'what number is missing in this progression?';
+const description = 'What number is missing in this progression?';
 
 const getRandNum = (num: number) => Math.round(Math.random() * num);
 

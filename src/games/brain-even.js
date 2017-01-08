@@ -2,7 +2,7 @@
 
 import game from '../game';
 
-const description = 'answer "yes" if number odd otherwise answer "no".';
+const description = 'Answer "yes" if number odd otherwise answer "no".';
 
 const isOdd = num => num % 2 === 0;
 

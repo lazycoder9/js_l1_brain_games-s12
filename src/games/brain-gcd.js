@@ -4,7 +4,7 @@ import game from '../game';
 
 type Question = { num1: number; num2: number };
 
-const description = 'find the greatest common divisor of given numbers.';
+const description = 'Find the greatest common divisor of given numbers.';
 
 const getRandNum = () => Math.round(Math.random() * 100);
 
