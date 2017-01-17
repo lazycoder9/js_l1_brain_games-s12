@@ -10,9 +10,9 @@ const description = 'What number is missing in this progression?';
 const getRandNum = (num: number) => Math.round(Math.random() * num);
 
 const getQuestion = () => {
-  const start = getRandNum(10);
+  const start = getRandNum(9);
   const diff = getRandNum(5) + 2;
-  const emptyPosition = getRandNum(10);
+  const emptyPosition = getRandNum(9);
   const progression = [];
 
   for (let i = 0; i < 10; i++) {
